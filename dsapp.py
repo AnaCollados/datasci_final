@@ -48,11 +48,11 @@ if selected == 'Visualizations':
         col5.image('model1wcpos.PNG')
         col6.write('- Model 1, most common positive words -')
 
-     if 'Model1' in initial:
-            if tick:
-                wc1()
-            elif wc:
-                wc1()
+    if 'Model1' in initial:
+        if tick:
+            wc1()
+        elif wc:
+            wc1()
 
 # TRY VADER
 if selected == 'Try VADER':
