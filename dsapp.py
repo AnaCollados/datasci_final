@@ -39,7 +39,7 @@ if selected == 'Visualizations':
     col3, col4, = st.columns(2)
     col3.subheader('Model 1: Non preprocess data')
     col4.subheader('Model 2: Data preprocessed')
-    initial = st.multiselect('What do you want to see?', ['Model 1', 'Model 2'], ['Model 1'])
+    initial = st.multiselect('What do you want to see?', ['Model1', 'Model2'], ['Model1'])
     tick = st.checkbox('Show all')
     wc = st.checkbox('Word cloud')
 
@@ -48,7 +48,7 @@ if selected == 'Visualizations':
         col5.image('model1wcpos.PNG')
         col6.write('- Model 1, most common positive words -')
 
-     if 'Model 1' in initial:
+     if 'Model1' in initial:
             if tick:
                 wc1()
             elif wc:
