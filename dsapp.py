@@ -43,6 +43,7 @@ if selected == 'Visualizations':
     tick = st.checkbox('Show all')
     wc = st.checkbox('Word cloud')
 
+    col5, col6 = st.columns(2)
 # Model 1
     def wc1():
         col5.image('model1wcpos.PNG')
