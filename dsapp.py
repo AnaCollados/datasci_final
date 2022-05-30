@@ -7,10 +7,10 @@ st.set_page_config(layout='wide')
 # Menu option
 selected = option_menu(
     menu_title=None,  # required
-    options=["Home", 'Preprocessing', "Visualizations", 'Try VADER'],  # required
-    icons=["house"],  # optional
-    menu_icon="cast",  # optional
-    default_index=0,  # optional
+    options=["Home", "Visualizations", 'Try VADER'],  # required
+    icons=["house"],  
+    menu_icon="cast",  
+    default_index=0,  
     orientation="horizontal",
     styles={
         "container": {"padding": "0!important", "background-color": "white"},  # fafad2
@@ -34,22 +34,12 @@ if selected == 'Home':
         with st.expander('Visualize'):
             st.write("It's more easy to visualize the dataset and the data!")
 
-# PREPROCESSING BETA           
-if selected == 'Preprocessing':
-    st.subheader('Dataset without the preprocessing')
-    df = pd.read_csv('training.csv',
-                 encoding = 'latin',header=None)
-    df1 = df.head(11)
-    st.table(df1)
-
-    st.subheader('Dataset after the preprocessing')
-    df.columns = ['sentiment', 'id', 'date', 'query', 'user_id', 'text']
-    df2 = df.drop(['sentiment', 'id', 'date', 'query', 'user_id'], axis=1)
-    df2.head(11)
-    st.table(df2)
-
 # VISUALIZATIONS
 if selected == 'Visualizations':
+    col3, col4, = st.columns(2)
+    col3.header('Model 1: Non preprocess data')
+    col4.header('Model 2: Data preprocessed')
+    st.subheader('What do you want to see?')
     st.subheader('Figure 1')
 
 # TRY VADER
