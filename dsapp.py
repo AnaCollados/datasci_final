@@ -40,20 +40,31 @@ if selected == 'Visualizations':
     col3.subheader('Model 1: Non preprocess data')
     col4.subheader('Model 2: Data preprocessed')
     initial = st.multiselect('What do you want to see?', ['Model1', 'Model2'], ['Model1'])
-    tick = st.checkbox('Show all')
+    #tick = st.checkbox('Show all')
     wc = st.checkbox('Word cloud')
-
+    bc = st.checkbox('Bar chart')
     col5, col6 = st.columns(2)
+    col7, col8 = st.columns(2)
+    col9, col10 = st.columns(2)
+    
 # Model 1
-    def wc1():
+    def wc1p():
         col5.image('model1wcpos.PNG')
-        col6.write('- Model 1, most common positive words -')
+        col6.write('Model 1, most common positive words')
+    def wc1n():
+        col7.image('model1wcneg.PNG')
+        col8.write('Model 1, most common negative words')
+    def bc():
+        col9.image('model1countposneg.PNG')
+        col10.write('Model 1, barchart of the count of words classificated as positive and negative')
 
     if 'Model1' in initial:
-        if tick:
-            wc1()
-        elif wc:
-            wc1()
+        if wc:
+            wc1p()
+            wc1n()
+        elif bc:
+            bc()
+            
 
 # TRY VADER
 if selected == 'Try VADER':
