@@ -1,7 +1,5 @@
-pip install vaderSentiment
-
 import streamlit as st
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from vadersentiment.vaderSentiment import SentimentIntensityAnalyzer
 from streamlit_option_menu import option_menu
 import pandas as pd
 
