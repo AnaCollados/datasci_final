@@ -1,5 +1,5 @@
 import streamlit as st
-from vaderSentiment.vadersentiment import SentimentIntensityAnalyzer
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from streamlit_option_menu import option_menu
 import pandas as pd
 
