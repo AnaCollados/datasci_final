@@ -62,6 +62,9 @@ if selected == 'Visualizations':
         if wc:
             wc1p()
             wc1n()
+            
+            if bc:
+                bc()
         elif bc:
             bc()
             
