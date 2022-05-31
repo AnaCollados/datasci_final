@@ -6,4 +6,4 @@
 Citation: Go, A., Bhayani, R. and Huang, L., 2009. Twitter sentiment classification using distant supervision. *CS224N Project Report, Stanford, 1(2009), p.12.*
 
 - **PNG archives** are used for Streamlit as visualizations.
-- 'app.py' is the Streamlit app: https://share.streamlit.io/anacollados/datasci_final/main/dsapp.py
+- **'dsapp.py'** is the Streamlit app: https://share.streamlit.io/anacollados/datasci_final/main/dsapp.py
