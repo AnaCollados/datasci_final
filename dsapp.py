@@ -63,7 +63,22 @@ if selected == 'Visualizations':
         wc1n()
         bc()
             
-
+    #MODEL 2
+    def bc2():
+        col9.image('model2bc.PNG')
+        col10.write('Model 2, barchart of the count of words classificated as positive and negative')
+    def wc2n():
+        col7.image('model2wcpos.PNG')
+        col8.write('Model 1, most common negative words')    
+    def wc2n():
+        col7.image('model2wcneg.PNG')
+        col8.write('Model 1, most common negative words')
+    
+    if 'Model2' in initial:
+        wc2p()
+        wc2n()
+        bc2()
+            
 # TRY VADER
 if selected == 'Try VADER':
 
