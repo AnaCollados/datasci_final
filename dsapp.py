@@ -62,17 +62,20 @@ if selected == 'Visualizations':
         wc1p()
         wc1n()
         bc()
-            
+    
+    col11, col12 = st.columns(2)
+    col13, col14 = st.columns(2)
+    col15, col16 = st.columns(2)      
     #MODEL 2
     def bc2():
-        col9.image('model2bc.PNG')
-        col10.write('Model 2, barchart of the count of words classificated as positive and negative')
+        col11.image('model2bc.PNG')
+        col12.write('Model 2, barchart of the count of words classificated as positive and negative')
     def wc2p():
-        col7.image('model2wcpos.PNG')
-        col8.write('Model 1, most common positive words')    
+        col13.image('model2wcpos.PNG')
+        col14.write('Model 2, most common positive words')    
     def wc2n():
-        col7.image('model2wcneg.PNG')
-        col8.write('Model 1, most common negative words')
+        col15.image('model2wcneg.PNG')
+        col16.write('Model 2, most common negative words')
     
     if 'Model2' in initial:
         wc2p()
