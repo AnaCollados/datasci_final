@@ -67,9 +67,9 @@ if selected == 'Visualizations':
     def bc2():
         col9.image('model2bc.PNG')
         col10.write('Model 2, barchart of the count of words classificated as positive and negative')
-    def wc2n():
+    def wc2p():
         col7.image('model2wcpos.PNG')
-        col8.write('Model 1, most common negative words')    
+        col8.write('Model 1, most common positive words')    
     def wc2n():
         col7.image('model2wcneg.PNG')
         col8.write('Model 1, most common negative words')
