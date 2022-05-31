@@ -28,11 +28,16 @@ if selected == 'Home':
     st.header('Why Streamlit?')
     col1, col2 = st.columns(2)
     with col1:
-        with st.expander('Pedagogy'):
-            st.write('Data Science can be easy!')
+        with st.expander("It's easy"):
+            st.write("""
+            Streamlit is an open-source app framework which is particularly used for Machine Learning and Data Science. In this sense, 
+            Streamlit is very useful for building various applications with the help of very few lines of code, thus is considered as a very beginner-friendly tool.
+            """)
     with col2:
         with st.expander('Visualize'):
-            st.write("It's more easy to visualize the dataset and the data!")
+            st.write("""
+            Streamlit has been considered to served in this project, as an app deployer. In other sense, the main purpose of using Streamlit was to 
+            facilitate the experience with the project. In the end, this purpose could not be fully accomplished due to the lack of time employed.""")
 
 # VISUALIZATIONS
 if selected == 'Visualizations':
